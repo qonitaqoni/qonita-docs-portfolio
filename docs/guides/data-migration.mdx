@@ -1,0 +1,45 @@
+
+# Data Migration Best Practices
+
+Before initiating a database schema migration in production, follow these safety protocols.
+
+<Callout type="warning" title="Backup Required">
+Always perform a full snapshot backup of your primary database cluster before executing migration scripts.  
+</Callout>
+
+  
+## Recommended Execution Order
+
+1. Test migration scripts on the Staging environment.
+2. Verify indexing performance using `EXPLAIN ANALYZE`.
+3. Schedule migration during off-peak maintenance hours.
+
+<Callout type="info" title="Zero-Downtime Tip">
+Use blue-green deployments or expand-contract schema patterns to avoid database locks during migration.  
+</Callout>
+
+
+## Some Common Issues Triggering Error
+1. Schema mismatches
+2. Missing or incomplete records
+3. Data loss and corruption risks
+4. Poor data quality
+5. Compliance and governance concerns
+6. Performance and scalability constraints
+7. System compatibility issues
+
+*Source:
+[Rudderstack](https://www.rudderstack.com/blog/data-migration-challenges/)*
+
+<Callout type="error" title="Fact">
+Nearly 50% of data migration projects exceed budget and timeline due to unforeseen complications.
+</Callout>
+
+
+## Verification Steps
+You are able to check a list of issues before migration using **Issues** Menu. After there is no issues in the list, **Migration** button will appear.  
+
+<Callout type="success" title="Migration Success">
+There will be notification pop up here if the database migration does succeed.
+</Callout>
+

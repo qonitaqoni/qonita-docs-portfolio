@@ -1,0 +1,49 @@
+
+# Fetching User Profiles
+
+Use the User API to retrieve detailed user account records by account ID.
+
+### Code Examples
+
+<Tabs defaultValue="js" values={[
+  { label: 'JavaScript (Fetch)', value: 'js' },
+  { label: 'Python (Requests)', value: 'py' },
+  { label: 'cURL', value: 'curl' }
+]}>
+
+<TabItem value="js">
+
+```javascript
+const response = await fetch('https://api.example.com/v1/users/usr_123', {
+  headers: { 'Authorization': 'Bearer YOUR_TOKEN' }
+});
+const data = await response.json();
+console.log(data);
+```
+
+</TabItem>
+
+<TabItem value="py">
+
+```python
+import requests
+
+url = "https://api.example.com/v1/users/usr_123"
+headers = {"Authorization": "Bearer YOUR_TOKEN"}
+
+response = requests.get(url, headers=headers)
+print(response.json())
+```
+
+</TabItem>
+
+<TabItem value="curl">
+
+```bash
+curl -X GET "https://api.example.com/v1/users/usr_123" \
+     -H "Authorization: Bearer YOUR_TOKEN"
+```
+
+</TabItem>
+
+</Tabs>

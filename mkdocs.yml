@@ -1,0 +1,32 @@
+site_name: Technical Writing Portfolio | Qonita Luthfia Sutino, S.Kom., M.Kom.
+site_description: Technical documentation samples including API specifications, setup guides, and system SOPs.
+site_author: Qonita Luthfia Sutino
+
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: blue
+  features:
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+
+nav:
+  - Home: index.md
+  - API Reference:
+      - Product Catalog API: api-reference/product-catalog.md
+      - User Auth API: api-reference/user-auth.md
+  - Guides & SOPs:
+      - PostgreSQL Local Setup: guides/postgres-setup.md
+      - Data Migration SOP: guides/data-migration.mdx
+      - User Profile SDK: guides/guides/user-profile-sdk.mdx
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
