@@ -1,0 +1,19 @@
+{
+  "id": "guides/user-profile-sdk",
+  "title": "Fetching User Profiles",
+  "description": "Use the User API to retrieve detailed user account records by account ID.",
+  "source": "@site/docs/guides/user-profile-sdk.mdx",
+  "sourceDirName": "guides",
+  "slug": "/guides/user-profile-sdk",
+  "permalink": "/qonita-docs-portfolio/guides/user-profile-sdk",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Data Migration Best Practices",
+    "permalink": "/qonita-docs-portfolio/guides/data-migration"
+  }
+}

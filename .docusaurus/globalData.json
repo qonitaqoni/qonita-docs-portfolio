@@ -1,0 +1,58 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/qonita-docs-portfolio/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/qonita-docs-portfolio/",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "api-reference/product-catalog",
+              "path": "/qonita-docs-portfolio/api-reference/product-catalog",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api-reference/user-auth",
+              "path": "/qonita-docs-portfolio/api-reference/user-auth",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guides/data-migration",
+              "path": "/qonita-docs-portfolio/guides/data-migration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guides/postgres-setup",
+              "path": "/qonita-docs-portfolio/guides/postgres-setup",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guides/user-profile-sdk",
+              "path": "/qonita-docs-portfolio/guides/user-profile-sdk",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "index",
+              "path": "/qonita-docs-portfolio/",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/qonita-docs-portfolio/",
+                "label": "index"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

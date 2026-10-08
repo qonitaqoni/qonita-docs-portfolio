@@ -1,0 +1,23 @@
+{
+  "id": "api-reference/user-auth",
+  "title": "User Authentication API",
+  "description": "The Authentication API manages user identity verification, JSON Web Token (JWT) issuance, and token rotation.",
+  "source": "@site/docs/api-reference/user-auth.md",
+  "sourceDirName": "api-reference",
+  "slug": "/api-reference/user-auth",
+  "permalink": "/qonita-docs-portfolio/api-reference/user-auth",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "product-catalog",
+    "permalink": "/qonita-docs-portfolio/api-reference/product-catalog"
+  },
+  "next": {
+    "title": "PostgreSQL Local Setup Guide",
+    "permalink": "/qonita-docs-portfolio/guides/postgres-setup"
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "237": [
+      237
+    ],
+    "436": [
+      436
+    ],
+    "17896441": [
+      869,
+      401
+    ],
+    "59482226": [
+      481
+    ],
+    "72412791": [
+      190
+    ],
+    "main": [
+      354,
+      869,
+      792
+    ],
+    "runtime~main": [
+      792,
+      869,
+      354
+    ],
+    "4ebedb17": [
+      151
+    ],
+    "55c6908d": [
+      681
+    ],
+    "5e95c892": [
+      647
+    ],
+    "a7bd4aaa": [
+      98
+    ],
+    "a94703ab": [
+      869,
+      48
+    ],
+    "aba21aa0": [
+      742
+    ],
+    "c377a04b": [
+      361
+    ],
+    "cb8ae0e6": [
+      663
+    ],
+    "d3356774": [
+      869,
+      624
+    ],
+    "styles": [
+      48,
+      354,
+      401,
+      624,
+      792,
+      869
+    ]
+  },
+  "assets": {
+    "48": {
+      "js": [
+        {
+          "file": "assets/js/a94703ab.f1a2dde7.js",
+          "hash": "0e90ba56462caf13",
+          "publicPath": "/qonita-docs-portfolio/assets/js/a94703ab.f1a2dde7.js"
+        }
+      ]
+    },
+    "98": {
+      "js": [
+        {
+          "file": "assets/js/a7bd4aaa.51a14300.js",
+          "hash": "caf6915103967ec5",
+          "publicPath": "/qonita-docs-portfolio/assets/js/a7bd4aaa.51a14300.js"
+        }
+      ]
+    },
+    "151": {
+      "js": [
+        {
+          "file": "assets/js/4ebedb17.ec0d57e2.js",
+          "hash": "93d4156f6604ffa8",
+          "publicPath": "/qonita-docs-portfolio/assets/js/4ebedb17.ec0d57e2.js"
+        }
+      ]
+    },
+    "190": {
+      "js": [
+        {
+          "file": "assets/js/72412791.616d7762.js",
+          "hash": "6ac0ac3d29685229",
+          "publicPath": "/qonita-docs-portfolio/assets/js/72412791.616d7762.js"
+        }
+      ]
+    },
+    "237": {
+      "js": [
+        {
+          "file": "assets/js/237.1a395a21.js",
+          "hash": "a624cfff1fa8750d",
+          "publicPath": "/qonita-docs-portfolio/assets/js/237.1a395a21.js"
+        }
+      ]
+    },
+    "354": {
+      "js": [
+        {
+          "file": "assets/js/runtime~main.4832a792.js",
+          "hash": "59399e6d4290575f",
+          "publicPath": "/qonita-docs-portfolio/assets/js/runtime~main.4832a792.js"
+        }
+      ]
+    },
+    "361": {
+      "js": [
+        {
+          "file": "assets/js/c377a04b.81627ebd.js",
+          "hash": "04e0e3a7fe171713",
+          "publicPath": "/qonita-docs-portfolio/assets/js/c377a04b.81627ebd.js"
+        }
+      ]
+    },
+    "401": {
+      "js": [
+        {
+          "file": "assets/js/17896441.fe3f7b06.js",
+          "hash": "a83b4a89bd43ba71",
+          "publicPath": "/qonita-docs-portfolio/assets/js/17896441.fe3f7b06.js"
+        }
+      ]
+    },
+    "436": {
+      "js": [
+        {
+          "file": "assets/js/436.62acf2c9.js",
+          "hash": "636b54ae8ddf1c4e",
+          "publicPath": "/qonita-docs-portfolio/assets/js/436.62acf2c9.js"
+        }
+      ]
+    },
+    "481": {
+      "js": [
+        {
+          "file": "assets/js/59482226.2d2a7293.js",
+          "hash": "9188799553f6a300",
+          "publicPath": "/qonita-docs-portfolio/assets/js/59482226.2d2a7293.js"
+        }
+      ]
+    },
+    "624": {
+      "js": [
+        {
+          "file": "assets/js/d3356774.9a8ece7b.js",
+          "hash": "8126f06ec1ae4509",
+          "publicPath": "/qonita-docs-portfolio/assets/js/d3356774.9a8ece7b.js"
+        }
+      ]
+    },
+    "647": {
+      "js": [
+        {
+          "file": "assets/js/5e95c892.d2f95eae.js",
+          "hash": "733a0bfaa7824e5e",
+          "publicPath": "/qonita-docs-portfolio/assets/js/5e95c892.d2f95eae.js"
+        }
+      ]
+    },
+    "663": {
+      "js": [
+        {
+          "file": "assets/js/cb8ae0e6.40402de3.js",
+          "hash": "a21a936ead5d680d",
+          "publicPath": "/qonita-docs-portfolio/assets/js/cb8ae0e6.40402de3.js"
+        }
+      ]
+    },
+    "681": {
+      "js": [
+        {
+          "file": "assets/js/55c6908d.78b86b51.js",
+          "hash": "92854625ca028ed3",
+          "publicPath": "/qonita-docs-portfolio/assets/js/55c6908d.78b86b51.js"
+        }
+      ]
+    },
+    "742": {
+      "js": [
+        {
+          "file": "assets/js/aba21aa0.eddf1432.js",
+          "hash": "37eee9f774eaab8c",
+          "publicPath": "/qonita-docs-portfolio/assets/js/aba21aa0.eddf1432.js"
+        }
+      ]
+    },
+    "792": {
+      "js": [
+        {
+          "file": "assets/js/main.a96adf57.js",
+          "hash": "5d5f190b1a47c957",
+          "publicPath": "/qonita-docs-portfolio/assets/js/main.a96adf57.js"
+        }
+      ]
+    },
+    "869": {
+      "css": [
+        {
+          "file": "assets/css/styles.0ce61a44.css",
+          "hash": "cfd143801753d67b",
+          "publicPath": "/qonita-docs-portfolio/assets/css/styles.0ce61a44.css"
+        }
+      ]
+    }
+  }
+}

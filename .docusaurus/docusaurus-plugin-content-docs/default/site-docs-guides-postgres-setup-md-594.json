@@ -1,0 +1,23 @@
+{
+  "id": "guides/postgres-setup",
+  "title": "PostgreSQL Local Setup Guide",
+  "description": "Prerequisites",
+  "source": "@site/docs/guides/postgres-setup.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/postgres-setup",
+  "permalink": "/qonita-docs-portfolio/guides/postgres-setup",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "User Authentication API",
+    "permalink": "/qonita-docs-portfolio/api-reference/user-auth"
+  },
+  "next": {
+    "title": "Data Migration Best Practices",
+    "permalink": "/qonita-docs-portfolio/guides/data-migration"
+  }
+}
