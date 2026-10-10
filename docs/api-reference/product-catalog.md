@@ -2,9 +2,9 @@
 Creates an account in the system.
 
 ### Endpoint Details
-| Attribute| Type | Description |
+| Attribute | Type | Description |
 | :--- | :--- | :--- |
-|Base URL| `string`| [`https://api.example.com`](https://api.example.com)|
+| Base URL | `string` | [`https://api.example.com`](https://api.example.com) |
 | Auth Required | `boolean` | `false` |
 | Content-Type | `string` | `application/json` |
 
