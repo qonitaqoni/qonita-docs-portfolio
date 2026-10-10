@@ -1,7 +1,9 @@
 ## `POST` /api/v1/auth/register
 Creates an account in the system.
 
+
 ### Endpoint Details
+
 | Attribute | Type | Description |
 | :--- | :--- | :--- |
 | Base URL | `string` | [`https://api.example.com`](https://api.example.com) |
@@ -10,13 +12,16 @@ Creates an account in the system.
 
 
 ### Request Body Parameters
+
 | Field | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `email` | `string` | Yes | User account email address. |
 | `password` | `string` | Yes | Account authentication password. |
 | `fullName` | `string` | Yes | Full registered name of the user. |
 
+
 ### Sample Request Payload
+
 ```json
 {
   "email": "user@example.com",
@@ -27,6 +32,7 @@ Creates an account in the system.
 
 
 ### Response Status Codes
+
 | Status Code | Description |
 | --- | --- |
 | `201 Created` | Client's request has been successfully fulfilled. |
