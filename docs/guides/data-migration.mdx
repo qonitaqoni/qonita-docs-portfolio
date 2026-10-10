@@ -4,7 +4,9 @@
 Before initiating a database schema migration in production, follow these safety protocols.
 
 :::warning[Backup Required]
+
 Always perform a full snapshot backup of your primary database cluster before executing migration scripts.
+
 :::
 
   
@@ -15,11 +17,14 @@ Always perform a full snapshot backup of your primary database cluster before ex
 3. Schedule migration during off-peak maintenance hours.
 
 :::info[Zero-Downtime Tip]
+
 Use blue-green deployments or expand-contract schema patterns to avoid database locks during migration.
+
 :::
 
 
 ## Some Common Issues Triggering Error
+
 1. Schema mismatches
 2. Missing or incomplete records
 3. Data loss and corruption risks
@@ -32,14 +37,19 @@ Use blue-green deployments or expand-contract schema patterns to avoid database 
 [Rudderstack](https://www.rudderstack.com/blog/data-migration-challenges/)*
 
 :::error[Fact]
+
 Nearly 50% of data migration projects exceed budget and timeline due to unforeseen complications.
+
 :::
 
 
 ## Verification Steps
+
 You are able to check a list of issues before migration using **Issues** Menu. After there is no issues in the list, **Migration** button will appear.  
 
 :::success[Migration Success]
+
 There will be notification pop up here if the database migration does succeed.
+
 :::
 
