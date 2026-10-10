@@ -1,15 +1,15 @@
 {
-  "/qonita-docs-portfolio/-536": {
+  "/qonita-docs-portfolio/-62b": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/qonita-docs-portfolio/-7a8": {
+  "/qonita-docs-portfolio/-0cc": {
     "__comp": "a7bd4aaa",
     "__props": "72412791"
   },
-  "/qonita-docs-portfolio/-27e": {
+  "/qonita-docs-portfolio/-8c1": {
     "__comp": "a94703ab"
   },
   "/qonita-docs-portfolio/api-reference/product-catalog-42b": {
@@ -23,6 +23,10 @@
   "/qonita-docs-portfolio/guides/data-migration-834": {
     "__comp": "17896441",
     "content": "cb8ae0e6"
+  },
+  "/qonita-docs-portfolio/guides/data-migration--96e": {
+    "__comp": "17896441",
+    "content": "175ca3c7"
   },
   "/qonita-docs-portfolio/guides/postgres-setup-1b0": {
     "__comp": "17896441",

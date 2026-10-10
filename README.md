@@ -18,7 +18,7 @@ Welcome to my technical writing portfolio repository. This project demonstrates 
 
 1. **[Product Catalog API Reference](./docs/api-reference/product-catalog.md):** Structured OpenAPI/REST documentation featuring request headers, payload examples, and HTTP error code handling tables.
 2. **[PostgreSQL Setup Guide](./docs/guides/postgres-setup.md):** Clear developer installation workflow using Docker containers, environment variables, and troubleshooting notes.
-3. **[Database Migration SOP](./docs/guides/data-migration.md):** Enterprise operational checklist utilizing warning banners and execution order protocols.
+3. **[Database Migration SOP](./docs/guides/data-migration.mdx):** Enterprise operational checklist utilizing warning banners and execution order protocols.
 4. **[Multi-Language SDK Guide](./docs/guides/user-profile-sdk.mdx):** Interactive multi-language code snippets (cURL, Python, JavaScript).
 
 ---

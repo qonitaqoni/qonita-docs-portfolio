@@ -1,4 +1,5 @@
 export default {
+  "175ca3c7": [() => import(/* webpackChunkName: "175ca3c7" */ "@site/docs/guides/data-migration-.md"), "@site/docs/guides/data-migration-.md", require.resolveWeak("@site/docs/guides/data-migration-.md")],
   "17896441": [() => import(/* webpackChunkName: "17896441" */ "@theme/DocItem"), "@theme/DocItem", require.resolveWeak("@theme/DocItem")],
   "4ebedb17": [() => import(/* webpackChunkName: "4ebedb17" */ "@site/docs/api-reference/product-catalog.md"), "@site/docs/api-reference/product-catalog.md", require.resolveWeak("@site/docs/api-reference/product-catalog.md")],
   "55c6908d": [() => import(/* webpackChunkName: "55c6908d" */ "@site/docs/api-reference/user-auth.md"), "@site/docs/api-reference/user-auth.md", require.resolveWeak("@site/docs/api-reference/user-auth.md")],

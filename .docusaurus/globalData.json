@@ -26,6 +26,10 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "guides/data-migration-",
+              "path": "/qonita-docs-portfolio/guides/data-migration-"
+            },
+            {
               "id": "guides/postgres-setup",
               "path": "/qonita-docs-portfolio/guides/postgres-setup",
               "sidebar": "tutorialSidebar"
