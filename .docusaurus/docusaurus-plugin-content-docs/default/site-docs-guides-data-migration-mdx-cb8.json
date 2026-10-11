@@ -12,8 +12,7 @@
   "version": "current",
   "frontMatter": {
     "id": "data-migration",
-    "title": "Database Migration SOP",
-    "draft": false
+    "title": "Database Migration SOP"
   },
   "sidebar": "tutorialSidebar",
   "previous": {

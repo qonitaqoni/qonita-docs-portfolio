@@ -4,15 +4,15 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/qonita-docs-portfolio/',
-    component: ComponentCreator('/qonita-docs-portfolio/', '62b'),
+    component: ComponentCreator('/qonita-docs-portfolio/', '536'),
     routes: [
       {
         path: '/qonita-docs-portfolio/',
-        component: ComponentCreator('/qonita-docs-portfolio/', '0cc'),
+        component: ComponentCreator('/qonita-docs-portfolio/', '7a8'),
         routes: [
           {
             path: '/qonita-docs-portfolio/',
-            component: ComponentCreator('/qonita-docs-portfolio/', '8c1'),
+            component: ComponentCreator('/qonita-docs-portfolio/', '27e'),
             routes: [
               {
                 path: '/qonita-docs-portfolio/api-reference/product-catalog',
@@ -31,11 +31,6 @@ export default [
                 component: ComponentCreator('/qonita-docs-portfolio/guides/data-migration', '834'),
                 exact: true,
                 sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/qonita-docs-portfolio/guides/data-migration-',
-                component: ComponentCreator('/qonita-docs-portfolio/guides/data-migration-', '96e'),
-                exact: true
               },
               {
                 path: '/qonita-docs-portfolio/guides/postgres-setup',
