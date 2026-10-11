@@ -1,6 +1,6 @@
 {
   "id": "api-reference/product-catalog",
-  "title": "product-catalog",
+  "title": "Product Catalog",
   "description": "POST /api/v1/auth/register",
   "source": "@site/docs/api-reference/product-catalog.md",
   "sourceDirName": "api-reference",
