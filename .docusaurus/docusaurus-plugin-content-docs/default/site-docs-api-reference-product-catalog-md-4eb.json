@@ -10,7 +10,10 @@
   "unlisted": false,
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "frontMatter": {
+    "id": "product-catalog",
+    "title": "Product Catalog"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Technical Documentation Portfolio",

@@ -1,3 +1,8 @@
+---
+id: product-catalog
+title: Product Catalog
+---
+
 ## `POST` /api/v1/auth/register
 Creates an account in the system.
 
