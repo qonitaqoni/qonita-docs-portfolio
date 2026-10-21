@@ -1,86 +1,43 @@
 {
-  "/qonita-docs-portfolio/__docusaurus/debug-2af": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---qonita-docs-portfolio-docusaurus-debugb-38-741"
-    }
-  },
-  "/qonita-docs-portfolio/__docusaurus/debug/config-dcc": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---qonita-docs-portfolio-docusaurus-debugb-38-741"
-    }
-  },
-  "/qonita-docs-portfolio/__docusaurus/debug/content-d29": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
-    "__context": {
-      "plugin": "plugin---qonita-docs-portfolio-docusaurus-debugb-38-741"
-    },
-    "__props": "__props---qonita-docs-portfolio-docusaurus-debug-contentaed-2e9"
-  },
-  "/qonita-docs-portfolio/__docusaurus/debug/globalData-982": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
-    "__context": {
-      "plugin": "plugin---qonita-docs-portfolio-docusaurus-debugb-38-741"
-    }
-  },
-  "/qonita-docs-portfolio/__docusaurus/debug/metadata-b70": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---qonita-docs-portfolio-docusaurus-debugb-38-741"
-    }
-  },
-  "/qonita-docs-portfolio/__docusaurus/debug/registry-bab": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---qonita-docs-portfolio-docusaurus-debugb-38-741"
-    }
-  },
-  "/qonita-docs-portfolio/__docusaurus/debug/routes-b09": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---qonita-docs-portfolio-docusaurus-debugb-38-741"
-    }
-  },
   "/qonita-docs-portfolio/-a57": {
-    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__comp": "5e95c892",
     "__context": {
-      "plugin": "plugin---qonita-docs-portfolio-aba-776"
+      "plugin": "aba21aa0"
     }
   },
   "/qonita-docs-portfolio/-784": {
-    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "__props": "__props---qonita-docs-portfolio-724-753"
+    "__comp": "a7bd4aaa",
+    "__props": "72412791"
   },
   "/qonita-docs-portfolio/-7a4": {
-    "__comp": "__comp---theme-doc-roota-94-67a"
+    "__comp": "a94703ab"
   },
   "/qonita-docs-portfolio/api-reference/product-catalog-42b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---qonita-docs-portfolio-api-reference-product-catalog-4-eb-32d"
+    "__comp": "17896441",
+    "content": "4ebedb17"
   },
   "/qonita-docs-portfolio/api-reference/user-auth-d30": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---qonita-docs-portfolio-api-reference-user-auth-55-c-c99"
+    "__comp": "17896441",
+    "content": "55c6908d"
   },
   "/qonita-docs-portfolio/guides/data-migration-834": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---qonita-docs-portfolio-guides-data-migrationcb-8-a8a"
+    "__comp": "17896441",
+    "content": "cb8ae0e6"
   },
   "/qonita-docs-portfolio/guides/postgres-setup-1b0": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---qonita-docs-portfolio-guides-postgres-setup-594-c3e"
+    "__comp": "17896441",
+    "content": "59482226"
   },
   "/qonita-docs-portfolio/guides/user-profile-sdk-6b6": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---qonita-docs-portfolio-guides-user-profile-sdkd-33-5af"
+    "__comp": "17896441",
+    "content": "d3356774"
   },
   "/qonita-docs-portfolio/product-catalog-api-970": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---qonita-docs-portfolio-product-catalog-api-2-af-b97"
+    "__comp": "17896441",
+    "content": "2afcc8f3"
   },
   "/qonita-docs-portfolio/-1dc": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---qonita-docs-portfolio-c-37-dae"
+    "__comp": "17896441",
+    "content": "c377a04b"
   }
 }
