@@ -16,8 +16,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Technical Documentation Portfolio",
-    "permalink": "/qonita-docs-portfolio/"
+    "title": "Product Catalog API",
+    "permalink": "/qonita-docs-portfolio/product-catalog-api"
   },
   "next": {
     "title": "User Authentication API",

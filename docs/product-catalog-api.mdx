@@ -1,0 +1,236 @@
+---
+id: product-catalog-api
+title: Product Catalog API Reference
+sidebar_label: Product Catalog API
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Product Catalog API Reference
+
+The Product Catalog API allows developers to retrieve catalog items, search for products, and simulate adding new products to inventory.
+
+---
+
+## Base URL
+
+All requests in this reference interact with the live public endpoint: `https://dummyjson.com`
+
+## Endpoints
+
+### 1. Get Product by ID
+
+Retrieve detailed information of a product.
+* HTTP Method: `GET` 
+* Path: `/products/{id}`
+
+#### Parameters
+
+| Parameter | Type | In | Description |
+| :--- | :--- | :--- | :--- |
+| `id` | `integer` | path | Required. The unique numerical identifier of the product (e.g. `1`). |
+
+#### Request Examples
+
+<Tabs defaultValue="curl" values={[
+  { label: 'cURL', value: 'curl' },
+  { label: 'JavaScript', value: 'js' },
+  { label: 'Python', value: 'py' }
+]}>
+
+<TabItem value="curl">
+
+```bash
+curl -X GET "[https://dummyjson.com/products/1](https://dummyjson.com/products/1)" \
+  -H "Accept: application/json"
+```
+
+</TabItem>
+
+<TabItem value="js">
+
+```javascript
+const response = await fetch('[https://dummyjson.com/products/1](https://dummyjson.com/products/1)');
+const product = await response.json();
+
+console.log(product);
+```
+  
+</TabItem>
+
+<TabItem label="py">
+
+```python
+import requests
+
+response = requests.get('[https://dummyjson.com/products/1](https://dummyjson.com/products/1)')
+data = response.json()
+
+print(data)
+```
+ 
+</TabItem>
+
+</Tabs>
+
+#### Response Example (`200 OK`)
+
+```json
+{
+  "id": 1,
+  "title": "Essence Mascara Lash Princess",
+  "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects.",
+  "category": "beauty",
+  "price": 9.99,
+  "discountPercentage": 7.17,
+  "rating": 4.94,
+  "stock": 5,
+  "brand": "Essence",
+  "sku": "RCH45Q1A"
+}
+```
+
+
+### 2. Search Products
+
+Searches for products in the catalog matching a query string.
+
+* HTTP Method: `GET`
+* Path: `/products/search`
+
+#### Parameters
+
+| Parameter | Type | In | Description |
+| :--- | :--- | :--- | :--- |
+| `q` | `string` | query | Requeired. The search keyword (e.g. `phone` or `laptop`). |
+
+#### Request Examples
+
+<Tabs defaultValue="curl" values={[
+  { label: 'cURL', value: 'curl' },
+  { label: 'JavaScript', value: 'js' }
+]}>
+
+<TabItem value="curl">
+
+```bash
+curl -X GET "[https://dummyjson.com/products/search?q=phone](https://dummyjson.com/products/search?q=phone)"
+```
+  
+</TabItem>
+
+<TabItem value="js">
+
+```javascript
+const response = await fetch('[https://dummyjson.com/products/search?q=phone](https://dummyjson.com/products/search?q=phone)');
+const results = await response.json();
+
+console.log(results);
+```
+  
+</TabItem>
+
+</Tabs>
+
+#### Response Example (`200 OK`)
+
+```json
+{
+  "products": [
+    {
+      "id": 121,
+      "title": "iPhone 5s",
+      "price": 199.99,
+      "category": "smartphones"
+    }
+  ],
+  "total": 1,
+  "skip": 0,
+  "limit": 30
+}
+```
+
+
+### 3. Create A New Product
+
+Simulates adding a new item to the catalog database.
+
+* HTTP Method: `POST`
+* Path: `/products/add`
+
+#### Request Body Schema
+
+| Field | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| `title` | `string` | Yes | The name of the product. |
+| `price` | `number` | Yes | Decimal selling price. |
+| `category` | `string` | Yes | Product classification tag. |
+
+#### Request Examples
+
+<Tabs defaultValue="curl" values={[
+    {label: 'cURL', value: 'curl'},
+    {label: 'JavaScript', value: 'js'}
+]}>
+  
+<TabItem value="curl">
+
+```bash
+curl -X POST "[https://dummyjson.com/products/add](https://dummyjson.com/products/add)" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Wireless Ergonomic Keyboard",
+    "price": 89.99,
+    "category": "electronics"
+  }'
+```
+
+</TabItem>
+
+<TabItem value="js">
+
+```javascript
+const response = await fetch('[https://dummyjson.com/products/add](https://dummyjson.com/products/add)', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    title: 'Wireless Ergonomic Keyboard',
+    price: 89.99,
+    category: 'electronics'
+  })
+});
+
+const newProduct = await response.json();
+console.log(newProduct);
+```
+
+</TabItem>
+
+</Tabs>
+
+#### Response Example (`201 Created`)
+
+```json
+{
+  "id": 195,
+  "title": "Wireless Ergonomic Keyboard",
+  "price": 89.99,
+  "category": "electronics"
+}
+```
+
+
+## Status and Error Codes
+
+The API uses standard HTTP response status codes: 
+
+| Status Code | Description |
+| :--- | :--- |
+| `200 OK` | The request succeeds and returning matched JSON data. |
+| `201 Created` | New product is successfully added. |
+| `400 Bad Request` | Missing required request body parameters. |
+| `404 Not Found` | The product `id` requested does not exist in the database. |
+
+
+

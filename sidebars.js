@@ -4,6 +4,7 @@
 const sidebars = {
   tutorialSidebar: [
     'index', // Links to docs/index.md
+    'product-catalog-api', // Links to docs/product-catalog-api.mdx
     {
       type: 'category',
       label: 'API References',

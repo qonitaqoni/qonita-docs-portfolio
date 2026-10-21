@@ -13,7 +13,7 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "Product Catalog",
-    "permalink": "/qonita-docs-portfolio/api-reference/product-catalog"
+    "title": "Product Catalog API",
+    "permalink": "/qonita-docs-portfolio/product-catalog-api"
   }
 }

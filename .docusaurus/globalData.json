@@ -39,6 +39,11 @@
               "id": "index",
               "path": "/qonita-docs-portfolio/",
               "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "product-catalog-api",
+              "path": "/qonita-docs-portfolio/product-catalog-api",
+              "sidebar": "tutorialSidebar"
             }
           ],
           "draftIds": [],
