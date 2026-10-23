@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkqonita_docs_portfolio||=[]).push([[2194],{2194(e,a,o){o.d(a,{createTreemapServices:()=>r.d});var r=o(1048);o(184)}}]);

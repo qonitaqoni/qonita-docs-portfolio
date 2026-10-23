@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkqonita_docs_portfolio||=[]).push([[6883],{6883(o,e,s){s.d(e,{createInfoServices:()=>a.v});var a=s(6744);s(184)}}]);

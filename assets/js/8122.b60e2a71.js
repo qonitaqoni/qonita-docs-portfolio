@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkqonita_docs_portfolio||=[]).push([[8122],{8122(e,a,c){c.d(a,{createPacketServices:()=>o.$});var o=c(8484);c(184)}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkqonita_docs_portfolio||=[]).push([[6236],{6236(e,i,o){o.d(i,{createCynefinServices:()=>s.t});var s=o(9760);o(184)}}]);

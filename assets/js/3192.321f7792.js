@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkqonita_docs_portfolio||=[]).push([[3192],{3192(e,c,r){r.d(c,{createArchitectureServices:()=>t.S});var t=r(4549);r(184)}}]);

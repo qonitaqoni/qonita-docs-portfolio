@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkqonita_docs_portfolio||=[]).push([[293],{293(e,o,i){i.d(o,{createEventModelingServices:()=>s.g});var s=i(4607);i(184)}}]);

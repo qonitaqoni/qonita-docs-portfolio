@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkqonita_docs_portfolio||=[]).push([[2580],{2580(e,a,o){o.d(a,{createWardleyServices:()=>r.J});var r=o(120);o(184)}}]);
