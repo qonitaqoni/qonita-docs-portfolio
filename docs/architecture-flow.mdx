@@ -1,0 +1,79 @@
+---
+id: architecture-flow
+title: System Architecture and Webhook Flows
+sidebar_label: Architecture and Flows
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# System Architecture and Webhook Flows
+
+This guide records the core system architecture of **The Product Catalog** ecosystem and illustrates how external client integrations interact with our background processing queues.
+
+---
+
+## 1. High level System Architecture
+
+The following component diagram outlines how client requests flow from the edge gateway through microservices and into persistent storage.
+
+```mermaid
+graph TD
+   Client[Client App / Postman] -->|HTTPS / REST API| Gateway[API Gateway / Auth Middleware]
+   Gateway -->|Routes /products| CatalogSvc[Product Catalog Service]
+   Gateway -->|Routes /tasks| TaskSvc[Task Management Service]
+
+   CatalogSvc --> DB[(PostgreSQL Database)]
+   TaskSvc --> DB
+
+   TaskSvc -->|Publish Event| Queue[(Message Queue / Redis)]
+   Queue --> Worker[Background Worker]
+```
+
+
+## 2. Authentication and Request Lifecycle Sequence
+
+When an authenticated client requests data or triggers action, the API gateaway validates token first then handing the execution over to the microservices layer.
+
+```mermaid
+sequenceDiagram
+   autonumber
+   actor Client
+   participant Gateway as API Gateway
+   participant Auth as Auth Service
+   participant Service as Target Microservice
+   participant DB as Database
+
+   Client->>Gateway: GET /v1/products/1 (Bearer Token)
+   Gateway->>Auth: Validate Token (JWT)
+   Auth-->>Gateway: Token Valid (Scope: read:products)
+   Gateway->>Service: Forward Request + User Context
+   Service->>DB: Query Product Record
+   DB-->>Service: Return Record Data
+   Service-->>Gateway: HTTP 200 OK (JSON Payload)
+   Gateway-->>Client: Return Response
+```
+
+
+## 3. Error Recovery and Retry Strategy
+
+If a downstream service gets a temporary timeout or database lock, the gateway executes an exponential backoff retry pattern before returning a standard error payload.
+
+```mermaid
+stateDiagram-v2
+   [*] --> RequestReceived
+   RequestReceived --> Authenticated: Token Validated
+   Authenticated --> Processing: Execute Handler
+
+   state Processing {
+    [*] --> TryQuery
+    TryQuery --> Success: HTTP 200 / 201
+    TryQuery --> DBTimeout: Connection Lag
+    DBTimeout --> RetryBackoff: Attempt < 3
+    RetryBackoff --> TryQuery: Wait 2s
+    DBTimeout --> Failstate: Max Retries Reached 
+   }
+
+   Success --> [*]
+   Failstate --> [*]: Return HTTP 500 / 503
+```
