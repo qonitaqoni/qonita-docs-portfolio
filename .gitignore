@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Docusaurus build and cache
+.docusaurus/
+build/
+.cache/
+
+# OS and Editor files
+.DS_Store
+*.pem
+.env

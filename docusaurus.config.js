@@ -7,16 +7,15 @@ const config = {
   tagline: 'Docs-as-Code Technical Writing Samples',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
+  // Set the production url of the site here
   url: 'https://qonitaqoni.github.io',
   
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // MUST match your GitHub repository name exactly with leading and trailing slashes!
+  // Set the /<baseUrl>/ pathname under which the site is served
   baseUrl: '/qonita-docs-portfolio/',
 
   // GitHub pages deployment config.
-  organizationName: 'qonitaqoni', // Usually your GitHub org/username.
-  projectName: 'qonita-docs-portfolio',    // Usually your repo name.
+  organizationName: 'qonitaqoni', // Usually GitHub org/username.
+  projectName: 'qonita-docs-portfolio',    // Usually repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -26,6 +25,12 @@ const config = {
     locales: ['en'],
   },
 
+  // Enable the Mermaid plugin
+  themes: ['@docusaurus/theme-mermaid'],
+  markdown: {
+    mermaid: true,
+  },
+
   presets: [
     [
       'classic',
@@ -33,9 +38,9 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/', // Serves the docs at the site root (e.g., /intro instead of /docs/intro)
+          routeBasePath: '/', // Serves the docs at the site root (e.g., /index instead of /docs/index)
         },
-        blog: false, // Disables the blog plugin if you only need documentation
+        blog: false, // Disables the blog plugin if only need documentation
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -46,6 +51,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      mermaid: {
+        theme: { light: 'neutral', dark: 'dark' },
+      },
       navbar: {
         title: 'Tech Writing Portfolio',
         items: [
@@ -56,7 +64,7 @@ const config = {
             label: 'Documentation',
           },
           {
-            href: 'https://github.com/YOUR-GITHUB-USERNAME/YOUR-REPOSITORY-NAME',
+            href: 'https://github.com/qonitaqoni/qonita-docs-portfolio',
             label: 'GitHub',
             position: 'right',
           },
@@ -64,7 +72,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} Technical Writing Portfolio. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Qonita's Technical Writing Portfolio. Built with Docusaurus.`,
       },
     }),
 };
