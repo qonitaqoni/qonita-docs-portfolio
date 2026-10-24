@@ -4,15 +4,21 @@
 const sidebars = {
   tutorialSidebar: [
     'index', // Links to docs/index.md
-    'product-catalog-api', // Links to docs/product-catalog-api.mdx
-    'architecture-flow', // Links to docs/architecture-flow.mdx
     {
       type: 'category',
       label: 'API References',
       items: [
+        'product-catalog-api', // Links to docs/product-catalog-api.mdx
         'api-reference/product-catalog', // Links to docs/api-reference/product-catalog.md 
         'api-reference/user-auth', // Links to docs/api-reference/user-auth.md
       ],
+    },
+    {
+      type: 'category',
+      label: 'System Architecture',
+      items: [
+        'architecture-flow', // Links to docs/architecture-flow.mdx
+      ]
     },
     {
       type: 'category',
