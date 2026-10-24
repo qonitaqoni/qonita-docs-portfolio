@@ -8,8 +8,7 @@ const sidebars = {
       type: 'category',
       label: 'API References',
       items: [
-        'product-catalog-api', // Links to docs/product-catalog-api.mdx
-        'api-reference/product-catalog', // Links to docs/api-reference/product-catalog.md 
+        'api-reference/product-catalog-api', // Links to docs/product-catalog-api.mdx
         'api-reference/user-auth', // Links to docs/api-reference/user-auth.md
       ],
     },

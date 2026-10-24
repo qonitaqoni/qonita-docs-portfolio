@@ -1,11 +1,14 @@
 # PostgreSQL Local Setup Guide
 
 ## Prerequisites
+
 * Docker Desktop
 * pql / Database Client
 * Minimum 4GB RAM
 
+
 ## Installation Steps
+
 1. Pull the latest official PostgreSQL image from Docker Hub.
 2. Run the container with environment variables for user credentials.   
 

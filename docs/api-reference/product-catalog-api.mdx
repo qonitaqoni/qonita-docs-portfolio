@@ -42,7 +42,7 @@ Retrieve detailed information of a product.
 <TabItem value="curl">
 
 ```bash
-curl -X GET "[https://dummyjson.com/products/1](https://dummyjson.com/products/1)" \
+curl -X GET "https://dummyjson.com/products/1" \
   -H "Accept: application/json"
 ```
 
@@ -51,7 +51,7 @@ curl -X GET "[https://dummyjson.com/products/1](https://dummyjson.com/products/1
 <TabItem value="js">
 
 ```javascript
-const response = await fetch('[https://dummyjson.com/products/1](https://dummyjson.com/products/1)');
+const response = await fetch('https://dummyjson.com/products/1');
 const product = await response.json();
 
 console.log(product);
@@ -59,12 +59,12 @@ console.log(product);
   
 </TabItem>
 
-<TabItem label="py">
+<TabItem value="py">
 
 ```python
 import requests
 
-response = requests.get('[https://dummyjson.com/products/1](https://dummyjson.com/products/1)')
+response = requests.get('https://dummyjson.com/products/1')
 data = response.json()
 
 print(data)
@@ -94,7 +94,7 @@ print(data)
 
 ### 2. Search Products
 
-Searches for products in the catalog matching a query string.
+Search for products in the catalog matching a query string.
 
 * HTTP Method: `GET`
 * Path: `/products/search`
@@ -115,7 +115,7 @@ Searches for products in the catalog matching a query string.
 <TabItem value="curl">
 
 ```bash
-curl -X GET "[https://dummyjson.com/products/search?q=phone](https://dummyjson.com/products/search?q=phone)"
+curl -X GET "https://dummyjson.com/products/search?q=phone"
 ```
   
 </TabItem>
@@ -123,7 +123,7 @@ curl -X GET "[https://dummyjson.com/products/search?q=phone](https://dummyjson.c
 <TabItem value="js">
 
 ```javascript
-const response = await fetch('[https://dummyjson.com/products/search?q=phone](https://dummyjson.com/products/search?q=phone)');
+const response = await fetch('https://dummyjson.com/products/search?q=phone');
 const results = await response.json();
 
 console.log(results);
@@ -154,7 +154,7 @@ console.log(results);
 
 ### 3. Create A New Product
 
-Simulates adding a new item to the catalog database.
+Simulate adding a new item to the catalog database.
 
 * HTTP Method: `POST`
 * Path: `/products/add`
@@ -177,7 +177,7 @@ Simulates adding a new item to the catalog database.
 <TabItem value="curl">
 
 ```bash
-curl -X POST "[https://dummyjson.com/products/add](https://dummyjson.com/products/add)" \
+curl -X POST "https://dummyjson.com/products/add" \
   -H "Content-Type: application/json" \
   -d '{
     "title": "Wireless Ergonomic Keyboard",
@@ -191,7 +191,7 @@ curl -X POST "[https://dummyjson.com/products/add](https://dummyjson.com/product
 <TabItem value="js">
 
 ```javascript
-const response = await fetch('[https://dummyjson.com/products/add](https://dummyjson.com/products/add)', {
+const response = await fetch('https://dummyjson.com/products/add', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
@@ -220,10 +220,74 @@ console.log(newProduct);
 }
 ```
 
+### 4. Get Product by Filtering, Sorting, and Pagination
 
-## Status and Error Codes
+Retrieve large collections of products using query parameters to optimize payloads and filter results. 
 
-The API uses standard HTTP response status codes: 
+#### Parameters
+
+| Parameter | Type | Description | Example |
+| :--- | :--- | :--- | :--- |
+| `category` | `string` | Filters product by category | `?category=smartphones` |
+| `limit` | `integer` | Maximum number of records to return (Default: 20, Max: 100) | `?limit=10` |
+| `skip` | `integer` | Number of records to skip for pagination offsets | `?skip=20` |
+| `sortBy` | `string` | Field to sort records by `price`, `title`, `rating` | `?sortBy=price` |
+| `order` | `string` | Sort direction of records by `asc` or `desc`| `?order=asc` |
+
+#### Request Examples
+
+<Tabs defaultValue="curl" values={[
+  {label: 'cURL', value: 'curl'},
+  {label: 'JavaScript', value: 'js'}
+]}>
+
+<TabItem value="curl">
+
+```bash
+curl -X GET "https://dummyjson.com/products/search?q=phone&limit=5&skip=0" \
+  -H "Accept: application/json"
+```
+
+</TabItem>
+
+<TabItem value="js">
+
+```javascript
+const params = new URLSearchParams({
+  q: 'phone',
+  limit: '5',
+  skip: '0'
+});
+
+const response = await fetch('https://dummyjson.com/products/search?${params}');
+const data = await response.json();
+console.log(`Found ${data.total} products.`);
+```
+
+</TabItem>
+
+</Tabs>
+
+
+## Standardized Error Response
+
+In the event of client or server error, the API return standard error payload in JSON conforming to HTTP semantics with an error code and diagnostic message.
+
+### Response Example
+
+```json
+{
+  "error": {
+    "code": "INVALID_QUERY_PARAMETER",
+    "message": "The provided 'limit' parameter exceeds the maximum allowed value of 100.",
+    "status": 400,
+    "timestamp": "2026-10-24T17:00:00Z"
+  }
+}
+```
+
+
+### Status and Error Codes
 
 | Status Code | Description |
 | :--- | :--- |
@@ -231,6 +295,3 @@ The API uses standard HTTP response status codes:
 | `201 Created` | New product is successfully added. |
 | `400 Bad Request` | Missing required request body parameters. |
 | `404 Not Found` | The product `id` requested does not exist in the database. |
-
-
-

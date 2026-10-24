@@ -7,20 +7,26 @@ The Authentication API manages user identity verification, JSON Web Token (JWT) 
 ---
 
 ## `POST` /api/v1/auth/login
+
 Authenticates credentials and returns a short-lived `accessToken` along with a long-lived `refreshToken`.
 
 ### Request Headers
+
 | Header | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `Content-Type` | `string` | Yes | Must be `application/json`. |
 
+
 ### Request Body Parameters
+
 | Field | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `email` | `string` | Yes | Registered account email address. |
 | `password` | `string` | Yes | Account password. |
 
+
 ### Sample Request Payload
+
 ```json
 {
   "email": "user@example.com",
@@ -30,6 +36,7 @@ Authenticates credentials and returns a short-lived `accessToken` along with a l
 
 
 ### Sample Response (200 OK)
+
 ```json
 { 
   "status": "success",
@@ -43,16 +50,20 @@ Authenticates credentials and returns a short-lived `accessToken` along with a l
 
 
 ## `POST` /api/v1/auth/refresh
+
 Exchanges a valid refresh token for a new access token when the current token expires.
 
 ### Request Body Parameters
+
 | Field | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `refreshToken` | `string` | Yes | Valid refresh token generated during login. |
 
+
 ### Response Status Codes
+
 | Status Code | Description |
-| --- | --- |
+| :--- | :--- |
 | `200 OK` | Token refreshed successfully |
 | `400 Bad Request` | Invalid payload |
 | `401 Unauthorized` | Invalid or expired token |
